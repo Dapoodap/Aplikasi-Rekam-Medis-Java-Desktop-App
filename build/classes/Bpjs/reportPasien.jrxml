@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="39c14262-e51a-4ab6-b0b0-e181ae6c6b19">
+	<property name="ireport.zoom" value="1.464100000000014"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="219"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     pasien.`id` AS pasien_id,
+     pasien.`rm` AS pasien_rm,
+     pasien.`nama` AS pasien_nama,
+     pasien.`umur` AS pasien_umur,
+     pasien.`sUmur` AS pasien_sUmur,
+     pasien.`tinggi` AS pasien_tinggi,
+     pasien.`berat` AS pasien_berat,
+     pasien.`BMI` AS pasien_BMI,
+     pasien.`status` AS pasien_status
+FROM
+     `pasien` pasien]]>
+	</queryString>
+	<field name="pasien_id" class="java.lang.Integer"/>
+	<field name="pasien_rm" class="java.lang.String"/>
+	<field name="pasien_nama" class="java.lang.String"/>
+	<field name="pasien_umur" class="java.lang.Integer"/>
+	<field name="pasien_sUmur" class="java.lang.String"/>
+	<field name="pasien_tinggi" class="java.lang.Double"/>
+	<field name="pasien_berat" class="java.lang.Double"/>
+	<field name="pasien_BMI" class="java.lang.Double"/>
+	<field name="pasien_status" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="87" splitType="Stretch">
+			<staticText>
+				<reportElement x="142" y="2" width="287" height="34" uuid="cd0d2400-1020-42aa-a262-1b823bf16365"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KELURAHAN SUMURBOTO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="142" y="36" width="287" height="20" uuid="f3da722f-555e-4f6a-844b-db09c5f8394c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[ JL. PROF. SOEDARTO, SH NO. 71 SEMARANG]]></text>
+			</staticText>
+			<image>
+				<reportElement x="47" y="-9" width="131" height="85" uuid="b4c81f20-0ba8-4ea7-8c48-230ba14c42b5"/>
+				<imageExpression><![CDATA["C:\\Users\\Lenovo\\Downloads\\SMGBOS.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="188" y="66" width="228" height="20" uuid="906cfe16-7c6b-41c3-8313-5c7a3c4a7c33"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[50629, 0247465551 / Fax 0247465551]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="105" splitType="Stretch">
+			<staticText>
+				<reportElement x="142" y="14" width="287" height="34" uuid="ecde92c4-1610-42aa-8459-f777377a74cc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Kesehatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="142" y="34" width="287" height="34" uuid="b47884d3-80b8-4a2d-9657-3b3c1d882aee"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kelurahan Sumurboto]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="9cf54810-b152-4cf0-aa27-46130104db56"/>
+				<graphicElement>
+					<pen lineWidth="3.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="455" y="68" width="53" height="17" uuid="a5ce9cad-2a8a-4d31-89b2-5054b63fb32f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Semarang, ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="85" width="100" height="20" uuid="0ae1e330-9484-44ad-a469-8afa28eb7a46"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<rectangle>
+				<reportElement x="466" y="41" width="69" height="20" uuid="5080315f-57f7-427e-9930-3461872d9ade"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="415" y="41" width="51" height="20" uuid="b0882cd2-be04-4ad6-8636-7e68ddca6da0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="355" y="41" width="60" height="20" uuid="6ecb7b67-3e14-4b8a-b118-6940801d35ad"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="288" y="41" width="67" height="20" uuid="e0fe64bc-a264-4e95-901f-af86bc7b5868"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="217" y="41" width="71" height="20" uuid="5c2b2df2-4e5f-4781-a314-117e0c540aa8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="149" y="41" width="68" height="20" uuid="0b6f24d4-2a07-4267-84cf-7e5ed3aa2244"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="77" y="41" width="72" height="20" uuid="710500ef-e70f-410b-9a71-7e217050b22e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="20" y="41" width="57" height="20" uuid="f6ab09ec-c434-4a05-97bd-c79872b53ec3"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="20" y="41" width="57" height="20" uuid="df06f7da-b74e-4ca8-a68b-d71f8da8f3b5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[No RM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="41" width="72" height="20" uuid="73af2609-86d5-43d4-8286-2e9c40b5f290"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Nama Pasien]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="149" y="41" width="68" height="20" uuid="26a36ec3-52d5-43a5-a91a-6b35c78b071d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Umur Pasien]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="217" y="41" width="71" height="20" uuid="11765b85-333b-483b-937d-f78c3c5b5beb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Golongan Umur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="41" width="67" height="20" uuid="51533e19-0360-4bd9-83b4-4eaf943f635a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Tinggi (m)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="355" y="41" width="60" height="20" uuid="443dc49a-bf5f-43e3-a866-dcbc3c554d2e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Berat (kg)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="415" y="41" width="51" height="20" uuid="dfc9781e-8227-40ab-9e59-99bac28a4dc6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[BMI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="466" y="41" width="69" height="20" uuid="fb1d7d09-9378-4020-9377-154e535254eb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Status Pasien]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="466" y="0" width="69" height="20" uuid="50677875-2f01-4ac5-aee0-58fad1a40f57"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="415" y="0" width="51" height="20" uuid="4ac9c4e8-b3fd-40a4-ba9e-fe6244014ef6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="355" y="0" width="60" height="20" uuid="5385291e-f041-4597-b443-68a5e3b04cda"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="288" y="0" width="67" height="20" uuid="88a0d0a5-96cd-4023-ac70-2b0a4d62308d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="217" y="0" width="71" height="20" uuid="ebaaf4d5-fc2c-449a-936c-79b8ee5703b9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="149" y="0" width="68" height="20" uuid="8c93980f-eca5-44c2-9b26-7428e61da36c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="77" y="0" width="72" height="20" uuid="5b68bc9e-fb52-4204-a528-af154c08df84"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="20" y="0" width="57" height="20" uuid="73428964-5abe-4644-a3d8-c674c020ea62"/>
+			</rectangle>
+			<textField>
+				<reportElement x="20" y="0" width="57" height="20" uuid="4cb3587a-a845-42ec-a4e2-1e2411ed60cf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pasien_rm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="77" y="0" width="72" height="20" uuid="40255368-07dd-4692-a8cf-1cdbbffef0ad"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pasien_nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="0" width="68" height="20" uuid="3eb66131-796c-4ba6-9040-9d21fa159e8e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pasien_umur}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="217" y="0" width="71" height="20" uuid="2382d829-7b70-4af8-8c21-771402099b02"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pasien_sUmur}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="288" y="0" width="67" height="20" uuid="acf11ed6-2a7e-4feb-b994-3cc6433c44a2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pasien_tinggi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="355" y="0" width="60" height="20" uuid="70151f3e-9b0c-4d20-9751-2d744ddd8543"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pasien_berat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="0" width="51" height="20" uuid="dae0badf-1534-4e99-86d2-6831702d1794"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pasien_BMI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="466" y="0" width="69" height="20" uuid="b223b5d1-6636-451d-9890-19a63180b4f6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pasien_status}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement x="455" y="19" width="69" height="17" uuid="0f3e88a0-4f24-4c9d-98e0-f67f56441fb4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Mengetahui,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="36" width="91" height="17" uuid="cffbef64-610b-47a8-a3fe-000685f7689c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Lurah Sumurboto ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="83" width="106" height="17" uuid="e88603bc-ac9f-4a34-8b21-af3c0036fbe9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[MOH. EDIYONO, SE]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
